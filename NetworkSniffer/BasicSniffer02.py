@@ -6,7 +6,7 @@ import struct
 from ctypes import *
 
 # リスンするホストのIP
-host = "172.24.231.174"
+host = "192.168.179.4"
 
 
 # IPヘッダ
@@ -73,7 +73,7 @@ try:
 
 except KeyboardInterrupt:
 
-    # Widnowsの場合はプロミスキャストモードを無効化
+    # Windiwsの場合はプロミスキャストモードを無効化
     if os.name == "nt":
         sniffer.ioctl(socket.SIO_RCVALL, socket.RCVALL_OFF)
 
